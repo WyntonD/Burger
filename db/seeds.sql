@@ -1,6 +1,7 @@
-USE burgers_db;
+-- Select burgers_db
+USE burgers_db`;
 
-INSERT INTO burgers(id,burger_name, devoured)
-VALUES (1,"MongoBurger",0), 
-        (2,"BBQBurger", 1), 
-        (3,"CheeseBurger",0);
+-- insert 3 burgers
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Angus', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Salmon', false, CURRENT_TIMESTAMP);
+INSERT INTO `burgers` (burger_name, devoured, date) VALUES ('Mushroom', false, CURRENT_TIMESTAMP);
